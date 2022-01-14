@@ -15,5 +15,5 @@ link_directories(/usr/local/Cellar/sfml/2.5.1/lib) # specify lib path to look fo
 # Standard path
 
 add_executable(sfml-app ${SRC_FILES})
-target_include_directories(sfml-app PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include ${SFML_INCLUDE_DIR})
+target_include_directories(sfml-app PUBLIC include ${SFML_INCLUDE_DIR}) # include -> folder in project root dir
 target_link_libraries(sfml-app PUBLIC sfml-graphics sfml-window sfml-system sfml-audio sfml-network) # link sfml-graphics dynamic link library file (libsfml-sfml-graphics.dylib in MacOS), and others to sfml-app executable

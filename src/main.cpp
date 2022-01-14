@@ -1,6 +1,6 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "include/foo.h"
+#include "foo.h"
 
 int main()
 {
